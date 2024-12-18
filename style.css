@@ -1,0 +1,285 @@
+ /* Menambahkan background transparan dengan gambar */
+ header {
+    background-image: url('https://awsimages.detik.net.id/community/media/visual/2023/04/01/inspirasi-dekorasi-pernikahan-mewah-dari-10-vendor-di-indonesia-dream-wedding-festival-2023-3.jpeg?w=650'); /* Ganti dengan URL gambar yang diinginkan */
+    background-size: cover; /* Menyesuaikan ukuran gambar dengan ukuran header */
+    background-position: center; /* Menempatkan gambar di tengah */
+    padding: 50px;
+    text-align: center;
+    position: relative;
+    border: 5px solid #f9f9f9; /* Menambahkan border putih */
+    border-radius: 10px; /* Membuat sudut border melengkung */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Memberikan bayangan lembut di sekitar header */
+
+}
+/* Mengubah latar belakang halaman menjadi hitam */
+body {
+    background-color: #FAEED1; /* Latar belakang hitam */
+    color: rgb(18, 18, 18); /* Mengubah warna teks menjadi putih agar kontras dengan latar belakang hitam */
+    font-family: Arial, sans-serif; /* Menambahkan jenis font */
+}
+
+/* Menambahkan gaya pada teks untuk meningkatkan kontras */
+h1.animate-header {
+    font-size: 36px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Menambahkan bayangan pada teks untuk kontras lebih baik */
+}
+
+
+/* Style umum untuk kartu wedding organizer */
+.card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+/* Gambar di dalam kartu */
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Container untuk teks */
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Nama Wedding Organizer */
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Lokasi Wedding Organizer */
+.card-location {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Harga */
+.card-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff0000;
+    margin: 10px 0;
+}
+
+/* Detail tambahan */
+.card-details {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Label diskon */
+.discount-label {
+    background-color: #ff4d4f;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Container utama */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+/* Animasi saat Hover pada Kartu */
+.card {
+    flex: 1 1 calc(33.33% - 20px);
+    box-sizing: border-box;
+    max-width: 300px;
+    min-width: 250px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-in-out forwards;
+}
+
+/* Animasi saat Hover */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Deskripsi yang disembunyikan pada awalnya */
+.description {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Animasi untuk menampilkan deskripsi */
+.show-description {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Styling umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    color: #5b5f97;
+    margin: 20px 0;
+}
+
+/* Container form */
+.form-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Membuat oval */
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border: 1px solid #5b5f97;
+    box-shadow: 0 0 4px rgba(91, 95, 151, 0.4);
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    width: 40%;
+    padding: 12px;
+    background-color: #5b5f97;
+    color: white;
+    border: none;
+    border-radius: 25px; /* Membuat oval */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4a4e8a;
+}
+
+/* Header untuk deskripsi */
+.form-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-header p {
+    font-size: 16px;
+    color: #777;
+}
+
+#testimonials {
+    text-align: center;
+    margin: 40px 0;
+}
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.testimonial {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.testimonial-img {
+    width: 75px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+/* Container Animasi */
+.bride-groom-animation {
+    position: relative;
+    text-align: center;
+    margin: 30px auto;
+}
+
+/* Animasi Bergerak Naik-Turun (Floating) */
+.animated-couple {
+    width: 200px; /* Ukuran gambar */
+    height: auto;
+    animation: float 3s ease-in-out infinite; /* Animasi bergerak */
+}
+
+/* Keyframes untuk animasi floating */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px); /* Naik */
+    }
+    100% {
+        transform: translateY(0); /* Kembali ke posisi awal */
+    }
+}
